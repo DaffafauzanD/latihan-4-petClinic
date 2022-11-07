@@ -7,7 +7,7 @@
 //echo $_POST['pet_address_0014'] . '<br>';
 //echo $_POST['pet_phone_0014'] . '<br>';
 
-if (isset($_POST)) {
+if (isset($_POST['save'])) {
     include 'connection_0014.php';
     $nama = $_POST['pet_name_0014'];
     $type = $_POST['pet_type_0014'];

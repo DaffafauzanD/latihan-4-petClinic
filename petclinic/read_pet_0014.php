@@ -17,6 +17,7 @@
             <th>owner</th>
             <th>address</th>
             <th>phone</th>
+            <th colspan="2">action</th>
         </tr>
         <?php
         include 'connection_0014.php';
@@ -34,6 +35,12 @@
             <td><?php echo $data['pet_owner_0014']; ?></td>
             <td><?php echo $data['pet_address_0014']; ?></td>
             <td><?php echo $data['pet_phone_0014']; ?></td>
+            <td><a href="edit_pet_0014.php?id=<?= $data[
+                'pet_id_0014'
+            ] ?>">Edit pet</a></td>
+            <td><a href="delete_pet_0014.php?id=<?= $data[
+                'pet_id_0014'
+            ] ?>"onclick="return confirm('are you sure?')">delete pet</a></td>
         </tr>
         <?php endforeach;
         ?>
