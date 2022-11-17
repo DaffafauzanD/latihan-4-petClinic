@@ -29,10 +29,10 @@
             <td><?php echo $data['doctors_gender_0014']; ?></td>
             <td><?php echo $data['doctors_address_0014']; ?></td>
             <td><?php echo $data['doctors_phone_0014']; ?></td>
-            <td><a href="edit_doctor_0014.php?id<?= $data[
+            <td><a href="edit_doctors_0014.php?id=<?= $data[
                 'doctors_id_0014'
             ] ?>">Edit doctor</a></td>
-            <td><a href="delete_doctor_0014.php?id<?= $data[
+            <td><a href="delete_doctors_0014.php?id=<?= $data[
                 'doctors_id_0014'
             ] ?>"onclick="return confirm('are you sure ?')">Delete doctor</a></td>
         </tr>
