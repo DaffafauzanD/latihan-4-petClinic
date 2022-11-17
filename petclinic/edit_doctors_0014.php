@@ -5,12 +5,12 @@
 </head>
 <body>
     <h1>Daffa Pet Clinic</h1>
-    <h3>Form edit Doctor</h3>
+    <h3>Form edit Pet</h3>
     <?php
     include 'connection_0014.php';
     $query = "SELECT * FROM doctors_0014 WHERE doctors_id_0014='$_GET[id]'";
-    $pet = mysqli_query($db_connection, $query);
-    $data = mysqli_fetch_assoc($pet);
+    $doctors = mysqli_query($db_connection, $query);
+    $data = mysqli_fetch_assoc($doctors);
     ?>
     <form method="post" action="update_doctors_0014.php">
         <table>
