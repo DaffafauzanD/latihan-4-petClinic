@@ -19,8 +19,8 @@
             <tr>
                 <td>usertype</td>
                 <td>
-                    <input type="radio" name="usertype_0014" value="male" require> Staff
-                    <input type="radio" name="usertype_0014" value="female" require> Manager
+                    <input type="radio" name="usertype_0014" value="Staff" require> Staff
+                    <input type="radio" name="usertype_0014" value="Manager" require> Manager
                 </td>
             </tr>
             <tr>

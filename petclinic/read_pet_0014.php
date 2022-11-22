@@ -28,7 +28,9 @@
         foreach ($pets as $data): ?>
         <tr>
             <td><?php echo $i++; ?></td>
-            <td><?php echo $data['pet_name_0014']; ?></td>
+            <td><a href="medicals_0014.php?pet_id=<?= $data[
+                'pet_id_0014'
+            ] ?>"><?= $data['pet_name_0014'] ?></a></td>
             <td><?php echo $data['pet_type_0014']; ?></td>
             <td><?php echo $data['pet_gender_0014']; ?></td>
             <td><?php echo $data['pet_age_0014']; ?></td>

@@ -33,9 +33,11 @@
             <td><a href="delete_user_0014.php?id=<?= $data[
                 'userid_0014'
             ] ?>"onclick = "return confirm ('are you sure ?')">delete user</a></td>
-            <td><a href="reset_password_0014.php?id=<?= $data[
+            <td><a href="update_password_0014.php?id=<?= $data[
                 'userid_0014'
-            ] ?>">reset password</a></td>
+            ] ?>&type=<?= $data[
+    'usertype_0014'
+] ?>"onclick = "return confirm ('are you sure ?')">reset password</a></td>
         </tr>
         <?php endforeach;
         ?>

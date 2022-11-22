@@ -1,8 +1,9 @@
 <?php
 if (isset($_POST['save'])) {
     include 'connection_0014.php';
-    $query = "UPDATE users_0014 SET password_0014 = '$_POST[password_0014]'
-              WHERE userid_0014 = '$_POST[userid_0014]'";
+    $password = password_hash($_GET['type'], PASSWORD_DEFAULT);
+    $query = "UPDATE users_0014 SET password_0014 = '$password'
+              WHERE userid_0014 = '$_GET[id]'";
 
     $update = mysqli_query($db_connection, $query);
 
