@@ -51,6 +51,13 @@ h4 {
     font-family: newHeader;
 }
 
+.container {
+    border-radius: 10px;
+    background-color: #d80101;
+    padding: 20px;
+    margin: 0px 40px 0px 40px;
+}
+
 .heading {
     width: 30%;
     text-align: center;

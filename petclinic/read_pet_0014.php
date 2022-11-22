@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <title>pet clinic daffa</title>
-    <link rel="stylesheet" type="text/css" href="style.css"/>
 </head>
 <body>
     <h1>pet clinic daffa</h1>
