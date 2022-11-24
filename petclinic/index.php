@@ -1,9 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
+
 <head>
     <title>Pet Clinic Daffa</title>
-    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <style>
+    <?php include 'style.css';
+    ?>
+    </style>
 </head>
+
 <body>
     <div class="navbar">
         <div class="logo">
@@ -19,14 +25,16 @@
         </div>
     </div>
 </body>
-    <div class="body">
-        <div class="heading">
-            <h1>Pet Clinic Daffa</h1>
-            <br>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore veritatis neque pariatur, cum repellat dolore </p>
-            <br>
-            <br>
-            <a href="#">selengkapnya</a>
-        </div>
+<div class="body">
+    <div class="heading">
+        <h1>Pet Clinic Daffa</h1>
+        <br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore veritatis neque pariatur, cum repellat
+            dolore </p>
+        <br>
+        <br>
+        <a href="#">selengkapnya</a>
     </div>
+</div>
+
 </html>
