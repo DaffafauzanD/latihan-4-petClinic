@@ -1,35 +1,41 @@
 <!DOCTYPE html>
 <html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <head>
     <title>Pet Clinic Daffa</title>
+    <style>
+    <?php include 'style_login.css';
+    ?>
+    </style>
 </head>
 
 <body>
-    <h1>Daffa Pet Clinic</h1>
-    <hr>
-    <h3>Form Login</h3>
-    <form method="post" action="login_0014.php">
-        <table>
-            <tr>
-                <td>Username</td>
-                <td><input type="text" name="username_0014" required></td>
-            </tr>
-            <tr>
-                <td>Password</td>
-                <td><input type="password" name="password_0014" id="pass" required></td>
-            </tr>
-            <tr>
-                <td>&nbsp;</td>
-                <td>&nbsp;<input type="checkbox" onclick="show()">Show password</td>
-            </tr>
-            <td>&nbsp;</td>
-            <td>&nbsp;
-                <input type="submit" name="login" value="LOGIN">
-                <input type="reset" name="reset" value="RESET">
-            </td>
-            </tr>
-        </table>
+    <div class="navbar">
+        <h1>PET CLINIC DAFFA</h1>
+    </div>
+    <div class="container">
+        <div class="kotak_login">
+            <h3>Login</h3>
+            <br>
+            <form method="post" action="login_0014.php">
+                <label>Username</label>
+                <input type="text" name="username_0014" class="form_login" required>
+                <label>Password</label>
+                <input type="password" name="password_0014" class="form_login" id="pass" required>
+                <label>
+                    <input type="checkbox" onclick="show()">
+                    Show password
+                </label>
+                <div class="kotak_submit">
+                    <input type="submit" name="login" class="tombol_login" value="LOGIN">
+                    <input type="reset" name="reset" class="tombol_reset" value="RESET">
+                </div>
+                <a href="index.php">CANCEL</a>
+        </div>
+    </div>
+
+
     </form>
     <script>
     function show() {
@@ -41,7 +47,6 @@
         }
     }
     </script>
-    <p><a href="index.php">CANCEL</a></p>
 </body>
 
 </html>
