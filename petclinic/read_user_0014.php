@@ -1,3 +1,12 @@
+<?php
+session_start();
+if (!isset($_SESSION['login'])) {
+    echo "<script>alert ('Please login first !');window.location.replace('form_login_0014.php');</script>";
+}
+if ($_SESSION['usertype'] != 'Manager') {
+    echo "<script>alert ('Access Forbiden !');window.location.replace('index.php');</script>";
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -52,7 +61,7 @@
                     <td><a href="delete_user_0014.php?id=<?= $data[
                         'userid_0014'
                     ] ?>" onclick="return confirm ('are you sure ?')">delete user</a></td>
-                    <td><a href="update_password_0014.php?id=<?= $data[
+                    <td><a href="reset_password_0014.php?id=<?= $data[
                         'userid_0014'
                     ] ?>&type=<?= $data[
     'usertype_0014'

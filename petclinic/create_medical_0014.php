@@ -18,6 +18,6 @@ if (isset($_POST['save'])) {
         echo "<script> alert('medical added failed!'); </script>";
     }
 } ?>
-<script>window.location.replace("medicals_0014.php?pet_id=<?= $_POST[
-    'pet_id_0014'
-] ?>");</script>
+<script>
+window.location.replace("medicals_0014.php?pet_id=<?= $_POST['pet_id_0014'] ?>");
+</script>

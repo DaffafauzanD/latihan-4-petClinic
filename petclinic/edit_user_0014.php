@@ -1,8 +1,19 @@
+<?php
+session_start();
+if (!isset($_SESSION['login'])) {
+    echo "<script>alert ('Please login first !');window.location.replace('form_login_0014.php');</script>";
+}
+if ($_SESSION['usertype'] != 'Manager') {
+    echo "<script>alert ('Access Forbiden !');window.location.replace('index.php');</script>";
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-   <title>Pet Clinic Daffa</title>
+    <title>Pet Clinic Daffa</title>
 </head>
+
 <body>
     <h1>Daffa Pet Clinic</h1>
     <h3>Form edit user</h3>
@@ -39,7 +50,7 @@
                 <td>fullname</td>
                 <td><input type="text" name="fullname_0014" value="<?= $data[
                     'fullname_0014'
-                ] ?>"require></td>
+                ] ?>" require></td>
             </tr>
             <tr>
                 <td></td>
@@ -48,12 +59,12 @@
                     <input type="reset" name="reset" value="reset" require>
                     <input type="hidden" name="userid_0014" value="<?= $data[
                         'userid_0014'
-                    ] ?>" 
-                    require>
+                    ] ?>" require>
                 </td>
             </tr>
         </table>
         <p><a href="read_user_0014.php">CANCEL</a></p>
     </form>
 </body>
+
 </html>
