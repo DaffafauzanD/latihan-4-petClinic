@@ -6,6 +6,7 @@ if (!isset($_SESSION['login'])) {
 ?>
 <!DOCTYPE html>
 <html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <head>
     <title>Pet Clinic Daffa</title>
