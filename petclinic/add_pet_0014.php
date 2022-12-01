@@ -1,19 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-   <title>Pet Clinic Daffa</title>
+    <title>Pet Clinic Daffa</title>
+    <style>
+    <?php include 'style_add.css';
+    ?>
+    </style>
 </head>
+
 <body>
-    <h1>Daffa Pet Clinic</h1>
-    <h3>Form add Pet</h3>
-    <form method="post" action="create_pet_0014.php">
-        <table>
+    <div class="navbar">
+        <div>
+            <h1>Pet Clinic Daffa</h1>
+        </div>
+        <div>
+            <h1>Form add Pet</h1>
+        </div>
+    </div>
+    <div class="container">
+        <form method="post" action="create_pet_0014.php">
+            <div class="inputD">
+                <table>
+                    <tr>
+                        <label>name</label>
+                        <td><input type="text" name="pet_name_0014" require></td>
+                    </tr>
+            </div>
             <tr>
-                <td>name</td>
-                <td><input type="text" name="pet_name_0014" require></td>
-            </tr>
-            <tr>
-                <td>type</td>
+                <label>type</label>
                 <td>
                     <select name="pet_type_0014" require>
                         <option value="">choose</option>
@@ -26,7 +41,7 @@
                 </td>
             </tr>
             <tr>
-                <td>gender</td>
+                <label for="anjay">gender</label>
                 <td>
                     <input type="radio" name="pet_gender_0014" value="male" require> male
                     <input type="radio" name="pet_gender_0014" value="female" require> female
@@ -43,7 +58,7 @@
             <tr>
                 <td>address</td>
                 <td><textarea name="pet_address_0014"></textarea>
-            </td>
+                </td>
             </tr>
             <tr>
                 <td>phone</td>
@@ -56,8 +71,10 @@
                     <input type="reset" name="reset" value="reset" require>
                 </td>
             </tr>
-        </table>
-        <p><a href="read_pet_0014.php">CANCEL</a></p>
-    </form>
+            </table>
+            <p><a href="read_pet_0014.php">CANCEL</a></p>
+        </form>
+    </div>
 </body>
+
 </html>

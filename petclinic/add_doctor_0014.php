@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-   <title>Pet Clinic Daffa</title>
+    <title>Pet Clinic Daffa</title>
 </head>
+
 <body>
     <h1>Daffa Pet Clinic</h1>
     <h3>Form add Doctor</h3>
@@ -22,7 +24,7 @@
             <tr>
                 <td>address</td>
                 <td><textarea name="doctors_address_0014"></textarea>
-            </td>
+                </td>
             </tr>
             <tr>
                 <td>phone</td>
@@ -39,4 +41,5 @@
         <p><a href="read_doctor_0014.php">CANCEL</a></p>
     </form>
 </body>
+
 </html>
