@@ -13,7 +13,6 @@
 <body>
     <div class="navbar">
         <h1>PET CLINIC DAFFA</h1>
-        <hr>
     </div>
     <div class="container">
         <div class="kotak_login">

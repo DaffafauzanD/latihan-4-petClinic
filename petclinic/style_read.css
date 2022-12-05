@@ -49,6 +49,17 @@ h4 {
     list-style: none;
 }
 
+.icon_image {
+    object-fit: cover;
+    width: 50px;
+    height: 50px;
+}
+
+td[align="center"] {
+    width: 50px;
+    height: 50px;
+}
+
 .text ul li a {
     text-decoration: none;
     color: #000;
@@ -72,6 +83,7 @@ h4 {
     font-family: Arial, Helvetica, sans-serif;
     border-collapse: collapse;
     width: 100%;
+    margin: 40px 0px 0px 0px;
 }
 
 .customers td,
