@@ -9,6 +9,7 @@ if (!isset($_SESSION['login'])) {
 
 <head>
     <title>Pet Clinic Daffa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
     <?php include 'style_add.css';
     ?>
@@ -20,13 +21,16 @@ if (!isset($_SESSION['login'])) {
         <div>
             <h1>Pet Clinic Daffa</h1>
         </div>
-
         <div>
-            <img src="nhhs.png" alt="" id="imageH">
+            <div class="card-img">
+                <img src="uploads/users/<?= $_SESSION[
+                    'userphoto'
+                ] ?>" alt="" class="img-card">
+            </div>
         </div>
     </div>
     <div class="container">
-        <div class="inputD">
+        <div class="inputD" style="overflow-x:auto;">
             <form method="post" action="create_pet_0014.php">
                 <table>
                     <tr>
@@ -35,11 +39,11 @@ if (!isset($_SESSION['login'])) {
                         </td>
                     </tr>
                     <tr>
-                        <td>Name</td>
+                        <td><b>Name</b></td>
                         <td><input type="text" name="pet_name_0014" require></td>
                     </tr>
                     <tr>
-                        <td>Type</td>
+                        <td><b>Type</td>
                         <td>
                             <select name="pet_type_0014" require>
                                 <option value="">choose</option>
@@ -52,27 +56,27 @@ if (!isset($_SESSION['login'])) {
                         </td>
                     </tr>
                     <tr>
-                        <td>Gender</td>
+                        <td><b>Gender</td>
                         <td>
                             <input type="radio" name="pet_gender_0014" value="male" require> Male
                             <input type="radio" name="pet_gender_0014" value="female" require> Female
                         </td>
                     </tr>
                     <tr>
-                        <td>Age</td>
-                        <td><input type="number" name="pet_age_0014" require></td>
+                        <td><b>Age</td>
+                        <td><b><input type="number" name="pet_age_0014" require></td>
                     </tr>
                     <tr>
-                        <td>Owner</td>
+                        <td><b>Owner</td>
                         <td><input type="text" name="pet_owner_0014" require></td>
                     </tr>
                     <tr>
-                        <td>Address</td>
-                        <td><textarea name="pet_address_0014"></textarea>
+                        <td><b>Address</td>
+                        <td><textarea name="pet_address_0014" class="textarea"></textarea>
                         </td>
                     </tr>
                     <tr>
-                        <td>Phone</td>
+                        <td><b>Phone</td>
                         <td><input type="text" name="pet_phone_0014" require></td>
                     </tr>
 

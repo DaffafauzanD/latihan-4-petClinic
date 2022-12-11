@@ -9,6 +9,7 @@ if (!isset($_SESSION['login'])) {
 
 <head>
     <title>Pet Clinic Daffa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
     <?php include 'style_add.css';
     ?>
@@ -20,10 +21,15 @@ if (!isset($_SESSION['login'])) {
         <div>
             <h1>Daffa Pet Clinic</h1>
         </div>
-        <div><img src="nhhs.png" alt="" id="imageH"></div>
+        <div class="card-img">
+            <img src="uploads/users/<?= $_SESSION[
+                'userphoto'
+            ] ?>" alt="" class="img-card">
+        </div>
+
     </div>
     <div class="container">
-        <div class="inputD">
+        <div class="inputD" style="overflow-x:auto;">
             <form method="post" action="create_doctor_0014.php">
                 <table>
                     <tr>
@@ -32,23 +38,23 @@ if (!isset($_SESSION['login'])) {
                         </td>
                     </tr>
                     <tr>
-                        <td>Name</td>
+                        <td><b>Name</td>
                         <td><input type="text" name="doctors_name_0014" require></td>
                     </tr>
                     <tr>
-                        <td>Gender</td>
+                        <td><b>Gender</td>
                         <td>
                             <input type="radio" name="doctors_gender_0014" value="male" require> Male
                             <input type="radio" name="doctors_gender_0014" value="female" require> Female
                         </td>
                     </tr>
                     <tr>
-                        <td>Address</td>
-                        <td><textarea name="doctors_address_0014"></textarea>
+                        <td><b>Address</td>
+                        <td><textarea name="doctors_address_0014" class="textarea"></textarea>
                         </td>
                     </tr>
                     <tr>
-                        <td>Phone</td>
+                        <td><b>Phone</td>
                         <td><input type="text" name="doctors_phone_0014" require></td>
                     </tr>
                     <tr>

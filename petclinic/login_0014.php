@@ -15,8 +15,8 @@ if (isset($_POST['login'])) {
             $_SESSION['password'] = $user['password_0014'];
             $_SESSION['usertype'] = $user['usertype_0014'];
             $_SESSION['fullname'] = $user['fullname_0014'];
-
-            echo "<script>alert('login success !');window.location.replace('index.php');</script>";
+            $_SESSION['userphoto'] = $user['user_photo_0014'];
+            echo "<script>window.location.replace('index.php');</script>";
         } else {
             echo "<script>alert('Login failed, wrong password !');window.location.replace('form_login_0014.php');</script>";
         }

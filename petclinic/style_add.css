@@ -17,11 +17,19 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-#imageH {
-    border-radius: 50%;
-    margin-right: 10px;
-    width: 80px;
+.card-img {
+    position: relative;
     height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    margin: 0px 0px 10px 0px;
+}
+
+.img-card {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 h1,
@@ -51,6 +59,12 @@ h4 {
     color: #1f1f1f;
 }
 
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+
 .container a {
     text-decoration: none;
 }
@@ -68,6 +82,7 @@ input[type*="text"] {
     border-radius: 4px;
     border: none;
     box-shadow: 3px 0px 6px #888888;
+    padding: 15px;
 }
 
 input[type*="number"] {
@@ -75,6 +90,12 @@ input[type*="number"] {
     height: 40px;
     font-size: 20px;
     border: none;
+    box-shadow: 3px 0px 6px #888888;
+    padding: 15px;
+}
+
+.textarea {
+    padding: 15px;
     box-shadow: 3px 0px 6px #888888;
 }
 

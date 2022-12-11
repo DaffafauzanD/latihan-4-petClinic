@@ -19,7 +19,7 @@
             <h1>Doctors list</h1>
         </div>
     </div>
-    <div class="body">
+    <div class="background-body">
         <div class="text">
             <ul>
                 <li><a href="add_doctor_0014.php">ADD NEW DOCTOR</a></li>
@@ -31,6 +31,7 @@
                 <tr>
                     <th>no</th>
                     <th>name</th>
+
                     <th>gender</th>
                     <th>address</th>
                     <th>phone</th>

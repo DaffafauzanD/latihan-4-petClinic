@@ -12,6 +12,7 @@ if ($_SESSION['usertype'] != 'Manager') {
 
 <head>
     <title>Pet Clinic Daffa</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
     <?php include 'style_add.css';
     ?>
@@ -24,11 +25,15 @@ if ($_SESSION['usertype'] != 'Manager') {
             <h1>Daffa Pet Clinic</h1>
         </div>
         <div>
-            <img src="nhhs.png" alt="" id="imageH" />
+            <div class="card-img">
+                <img src="uploads/users/<?= $_SESSION[
+                'userphoto'
+            ] ?>" alt="" class="img-card">
+            </div>
         </div>
     </div>
     <div class="container">
-        <div class="inputD">
+        <div class="inputD" style="overflow-x:auto;">
             <form method="post" action="create_user_0014.php">
                 <table>
                     <tr>
@@ -37,18 +42,18 @@ if ($_SESSION['usertype'] != 'Manager') {
                         </td>
                     </tr>
                     <tr>
-                        <td>Username</td>
+                        <td><b>Username</td>
                         <td><input type="text" name="username_0014" require></td>
                     </tr>
                     <tr>
-                        <td>User type</td>
+                        <td><b>User type</td>
                         <td>
                             <input type="radio" name="usertype_0014" value="Staff" require> Staff
                             <input type="radio" name="usertype_0014" value="Manager" require> Manager
                         </td>
                     </tr>
                     <tr>
-                        <td>Fullname</td>
+                        <td><b>Fullname</td>
                         <td><input type="text" name="fullname_0014" require></td>
                     </tr>
                     <tr>

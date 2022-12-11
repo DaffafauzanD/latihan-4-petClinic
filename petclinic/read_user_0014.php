@@ -27,7 +27,7 @@ if ($_SESSION['usertype'] != 'Manager') {
             <h1>User list</h1>
         </div>
     </div>
-    <div class="body">
+    <div class="background-body">
         <div class="text">
             <ul>
                 <li><a href="add_user_0014.php">ADD NEW USER</a></li>
@@ -39,6 +39,7 @@ if ($_SESSION['usertype'] != 'Manager') {
                 <tr>
                     <th>no</th>
                     <th>username</th>
+                    <th>photo</th>
                     <th>usertype</th>
                     <th>fullname</th>
                     <th colspan="3">action</th>
@@ -53,6 +54,14 @@ if ($_SESSION['usertype'] != 'Manager') {
                 <tr>
                     <td><?php echo $i++; ?></td>
                     <td><?php echo $data['username_0014']; ?></td>
+                    <td align="center">
+                        <img src="uploads/users/<?php echo $data[
+                            'user_photo_0014'
+                        ]; ?>" class="icon_image" alt="">
+                        <a href="user_photo_0014.php?id=<?= $data[
+                            'userid_0014'
+                        ] ?>">change photo</a>
+                    </td>
                     <td><?php echo $data['usertype_0014']; ?></td>
                     <td><?php echo $data['fullname_0014']; ?></td>
                     <td><a href="edit_user_0014.php?id=<?= $data[
